@@ -4,6 +4,9 @@ package main
 test_deny_sqlinstance_if_backup_disabled {
     cfg := {
         "kind": "SQLInstance",
+        "metadata": {
+            "name": "sqlinstance"
+        },
         "spec": {
             "settings": {
                 "backupConfiguration": {
