@@ -1,0 +1,10 @@
+
+# (PS-3(1)) Classified Information
+
+## Definition
+
+The organization ensures that individuals accessing an information system processing, storing, or transmitting classified information are cleared and indoctrinated to the highest classification level of the information to which they have access on the system.
+
+## Additional Guidance
+
+

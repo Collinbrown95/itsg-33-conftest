@@ -1,0 +1,14 @@
+
+# (SA-10) Developer Configuration Management
+
+## Definition
+
+(A)The organization requires the developer of the information system, system component, or information system service to perform configuration management during system, component, or service [Selection (one or more): design; development; implementation; operation];
+(B)The organization requires the developer of the information system, system component, or information system service to document, manage, and control the integrity of changes to [Assignment: organization-defined configuration items under configuration management];
+(C)The organization requires the developer of the information system, system component, or information system service to implement only organization-approved changes to the system, component, or service;
+(D)The organization requires the developer of the information system, system component, or information system service to document approved changes to the system, component, or service and the potential security impacts of such changes; and
+(E)The organization requires the developer of the information system, system component, or information system service to track security flaws and flaw resolution within the system, component, or service and report findings to [Assignment: organization-defined personnel].
+
+## Additional Guidance
+
+This control also applies to organizations conducting internal information systems development and integration. Organizations consider the quality and completeness of the configuration management activities conducted by developers as evidence of applying effective security safeguards. Safeguards include, for example, protecting from unauthorized modification or destruction, the master copies of all material used to generate security-relevant portions of the system hardware, software, and firmware. Maintaining the integrity of changes to the information system, information system component, or information system service requires configuration control throughout the system development life cycle to track authorized changes and prevent unauthorized changes. Configuration items that are placed under configuration management (if existence/use is required by other security controls) include: the formal model; the functional, high-level, and low-level design specifications; other design data; implementation documentation; source code and hardware schematics; the running version of the object code; tools for comparing new versions of security-relevant hardware descriptions and software/firmware source code with previous versions; and test fixtures and documentation. Depending on the mission/business needs of organizations and the nature of the contractual relationships in place, developers may provide configuration management support during the operations and maintenance phases of the life cycle.

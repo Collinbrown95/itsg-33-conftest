@@ -1,0 +1,10 @@
+
+# (IR-3(1)) Automated Testing
+
+## Definition
+
+The organization employs automated mechanisms to more thoroughly and effectively test the incident response capability.
+
+## Additional Guidance
+
+Organizations use automated mechanisms to more thoroughly and effectively test incident response capabilities, for example: (i) by providing more complete coverage of incident response issues; (ii) by selecting more realistic test scenarios and test environments; and (iii) by stressing the response capability.

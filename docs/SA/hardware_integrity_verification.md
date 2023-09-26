@@ -1,0 +1,10 @@
+
+# (SA-10(3)) Hardware Integrity Verification
+
+## Definition
+
+The organization requires the developer of the information system, system component, or information system service to enable integrity verification of hardware components.
+
+## Additional Guidance
+
+This control enhancement allows organizations to detect unauthorized changes to hardware components through the use of tools, techniques, and/or mechanisms provided by developers. Organizations verify the integrity of hardware components, for example, with hard-to-copy labels and verifiable serial numbers provided by developers, and by requiring the implementation of anti-tamper technologies. Delivered hardware components also include updates to such components.
