@@ -1,5 +1,7 @@
 # Conftest Policy as Code Prototype
 
+[**Temporary ITSG-33 Docs Site**](https://collinbrown95.github.io/itsg-33-conftest/)
+
 The purpose of this repository is to use conftest to implement policy as code for gcp infrastructure provisioned with config connector.
 
 ## How to Use
