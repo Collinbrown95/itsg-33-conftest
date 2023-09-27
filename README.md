@@ -11,23 +11,25 @@ The purpose of this repository is to use conftest to implement policy as code fo
 - The `--policy ./policy` part is implicit, but you can point to policies defined in other folders.
 
 ```bash
-conftest test input.yaml --policy ./policy [--output table] [--all-namespaces]
+conftest test iac/ --all-namespaces --combine --output json [--policy policy/config_connector] 
 ```
 
 **Output**
 
 ```bash
- $ conftest test input.yaml
-FAIL - input.yaml - main - 
-    """
-    [CP-9 | Information System Backup] (TODO: Link to docs)
-    SQLInstance sqluser-dep does not have backup enabled.
-    
-    Remediation: 'spec.settings.backupConfiguration.enabled': true.
-    """
-    
-
-1 test, 0 passed, 0 warnings, 1 failure, 0 exceptions
+ $ conftest test iac/ --all-namespaces --combine --output json 
+[
+        {
+                "filename": "Combined",
+                "namespace": "config_connector.cp_9.sqlinstance",
+                "successes": 0,
+                "failures": [
+                        {
+                                "msg": "Backup is disabled. Remediation: set `spec.settings.backupConfiguration.enabled: true`"
+                        }
+                ]
+        }
+]
 ```
 
 ## Conftest Semantics

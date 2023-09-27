@@ -9,5 +9,5 @@ deny_sqlinstance_backup_disabled[msg] {
   not input[i].contents.spec.settings.backupConfiguration.enabled == true
   
   # Error message with remediation
-  msg = "Backup is disabled for SQLInstance"
+  msg = "Backup is disabled. Remediation: set `spec.settings.backupConfiguration.enabled: true`"
 }
