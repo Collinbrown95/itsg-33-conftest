@@ -17,4 +17,13 @@ plugins:
   - search:
       separator: '[\s\-\.]+'
 
+markdown_extensions:
+  - pymdownx.snippets
+  - pymdownx.highlight:
+      linenums: true
+  - pymdownx.superfences 
+
 nav:
+  - Config Connector:
+    - CP 9:
+      - SQLInstance: config_connector/cp_9/sqlinstance.md
