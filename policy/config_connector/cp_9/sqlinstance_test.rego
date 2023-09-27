@@ -13,12 +13,10 @@ test_deny_if_any_sqlinstance_has_backup_disabled {
 	cfg := [
 		{"contents": {
 			"kind": "SQLInstance",
-			"metadata": {"name": "sqlinstance"},
 			"spec": {"settings": {"backupConfiguration": {"enabled": true}}},
 		}},
 		{"contents": {
 			"kind": "SQLInstance",
-			"metadata": {"name": "sqlinstance"},
 			"spec": {"settings": {"backupConfiguration": {"enabled": false}}},
 		}},
 	]
@@ -32,12 +30,10 @@ test_deny_if_any_sqlinstance_has_path_to_backup_unspecified {
 	cfg := [
 		{"contents": {
 			"kind": "SQLInstance",
-			"metadata": {"name": "sqlinstance"},
 			"spec": {"settings": {}},
 		}},
 		{"contents": {
 			"kind": "SQLInstance",
-			"metadata": {"name": "sqlinstance"},
 			"spec": {"settings": {"backupConfiguration": {"enabled": true}}},
 		}},
 	]
@@ -55,7 +51,7 @@ test_deny_if_any_sqlinstance_has_path_to_backup_unspecified {
 test_allow_if_resource_kind_is_not_sqlinstance {
 	cfg := [
 		{"contents": {
-			"kind": "Bucket",
+			"kind": "StorageBucket",
 		}},
 		{"contents": {
 			"kind": "Notebook",
@@ -70,12 +66,10 @@ test_allow_if_every_sqlinstance_has_backup_enabled {
 	cfg := [
 		{"contents": {
 			"kind": "SQLInstance",
-			"metadata": {"name": "sqlinstance"},
 			"spec": {"settings": {"backupConfiguration": {"enabled": true}}},
 		}},
 		{"contents": {
 			"kind": "SQLInstance",
-			"metadata": {"name": "sqlinstance"},
 			"spec": {"settings": {"backupConfiguration": {"enabled": true}}},
 		}},
 	]
