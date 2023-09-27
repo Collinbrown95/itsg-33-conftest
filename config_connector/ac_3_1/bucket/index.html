@@ -13,7 +13,7 @@
     
     
       
-        <title>SQLInstance - ITSG-33</title>
+        <title>Bucket - ITSG-33</title>
       
     
     
@@ -64,7 +64,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#cp_9-sqlinstance" class="md-skip">
+        <a href="#ac-3-1-bucket" class="md-skip">
           Skip to content
         </a>
       
@@ -97,7 +97,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              SQLInstance
+              Bucket
             
           </span>
         </div>
@@ -233,12 +233,14 @@
               
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_1_1" type="checkbox" id="__nav_1_1" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_1_1" type="checkbox" id="__nav_1_1" checked>
       
       
       
@@ -259,55 +261,6 @@
               
   
   
-  
-    <li class="md-nav__item">
-      <a href="../../ac_3_1/bucket/" class="md-nav__link">
-        Bucket
-      </a>
-    </li>
-  
-
-            
-          
-        </ul>
-      </nav>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-    
-  
-  
-    
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
-      
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_1_2" type="checkbox" id="__nav_1_2" checked>
-      
-      
-      
-      
-        <label class="md-nav__link" for="__nav_1_2">
-          CP 9
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <nav class="md-nav" aria-label="CP 9" data-md-level="2">
-        <label class="md-nav__title" for="__nav_1_2">
-          <span class="md-nav__icon md-icon"></span>
-          CP 9
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-            
-              
-  
-  
     
   
   
@@ -320,12 +273,12 @@
       
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
-          SQLInstance
+          Bucket
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
-        SQLInstance
+        Bucket
       </a>
       
         
@@ -361,6 +314,53 @@
   
 </nav>
       
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_1_2" type="checkbox" id="__nav_1_2" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_1_2">
+          CP 9
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="CP 9" data-md-level="2">
+        <label class="md-nav__title" for="__nav_1_2">
+          <span class="md-nav__icon md-icon"></span>
+          CP 9
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../cp_9/sqlinstance/" class="md-nav__link">
+        SQLInstance
+      </a>
     </li>
   
 
@@ -431,13 +431,13 @@
             <article class="md-content__inner md-typeset">
               
                 
-  <a href="https://github.com/Collinbrown95/itsg-33-conftest/edit/master/docs/config_connector/cp_9/sqlinstance.md" title="Edit this page" class="md-content__button md-icon">
+  <a href="https://github.com/Collinbrown95/itsg-33-conftest/edit/master/docs/config_connector/ac_3_1/bucket.md" title="Edit this page" class="md-content__button md-icon">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"/></svg>
   </a>
 
 
 
-<h1 id="cp_9-sqlinstance">CP_9 SQLInstance</h1>
+<h1 id="ac-3-1-bucket">AC-3 (1) Bucket</h1>
 <h2 id="rego-policy">Rego Policy</h2>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
 <span class="normal"> 2</span>
@@ -451,18 +451,18 @@
 <span class="normal">10</span>
 <span class="normal">11</span>
 <span class="normal">12</span>
-<span class="normal">13</span></pre></div></td><td class="code"><div><pre><span></span><code>package<span class="w"> </span>config_connector.cp_9.sqlinstance
+<span class="normal">13</span></pre></div></td><td class="code"><div><pre><span></span><code>package<span class="w"> </span>config_connector.ac_3_1.bucket
 
-deny_sqlinstance_backup_disabled<span class="o">[</span>msg<span class="o">]</span><span class="w"> </span><span class="o">{</span>
-<span class="w">  </span><span class="c1"># There exists some `i`  </span>
-<span class="w">  </span>some<span class="w"> </span>i
-<span class="w">  </span><span class="c1"># Such that the `i`th resource is a SQLInstance manifest</span>
-<span class="w">  </span>input<span class="o">[</span>i<span class="o">]</span>.contents.kind<span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="s2">&quot;SQLInstance&quot;</span>
-<span class="w">  </span><span class="c1"># And it is not the case that its backup configuration is enabled</span>
-<span class="w">  </span>not<span class="w"> </span>input<span class="o">[</span>i<span class="o">]</span>.contents.spec.settings.backupConfiguration.enabled<span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="nb">true</span>
+deny_storagebucket_without_public_access_prevention<span class="o">[</span>msg<span class="o">]</span><span class="w"> </span><span class="o">{</span>
+<span class="w">    </span><span class="c1"># There exists some `i`</span>
+<span class="w">    </span>some<span class="w"> </span>i
+<span class="w">    </span><span class="c1"># Such that the `i`th resource is a StorageBucket manifest</span>
+<span class="w">    </span>input<span class="o">[</span>i<span class="o">]</span>.contents.kind<span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="s2">&quot;StorageBucket&quot;</span>
+<span class="w">    </span><span class="c1"># And it is not the case that public access prevention is enabled</span>
+<span class="w">    </span>not<span class="w"> </span>input<span class="o">[</span>i<span class="o">]</span>.contents.spec.publicAccessPrevention<span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="nb">true</span>
 
-<span class="w">  </span><span class="c1"># Error message with remediation</span>
-<span class="w">  </span><span class="nv">msg</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;Backup is disabled. Remediation: set `spec.settings.backupConfiguration.enabled: true`&quot;</span>
+<span class="w">    </span><span class="c1"># Error message with remediation</span>
+<span class="w">    </span><span class="nv">msg</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;Public Access Prevension is not enabled. Remediation: set `spec.publicAccessPrevention: true`&quot;</span>
 <span class="o">}</span>
 </code></pre></div></td></tr></table></div>
 <h2 id="test-cases">Test Cases</h2>
@@ -542,7 +542,7 @@ deny_sqlinstance_backup_disabled<span class="o">[</span>msg<span class="o">]</sp
 <span class="normal">74</span>
 <span class="normal">75</span>
 <span class="normal">76</span>
-<span class="normal">77</span></pre></div></td><td class="code"><div><pre><span></span><code>package<span class="w"> </span>config_connector.cp_9.sqlinstance
+<span class="normal">77</span></pre></div></td><td class="code"><div><pre><span></span><code>package<span class="w"> </span>config_connector.ac_3_1.bucket
 
 <span class="c1">#  _            _         _                  </span>
 <span class="c1"># | |_ ___  ___| |_    __| | ___ _ __  _   _ </span>
@@ -551,38 +551,38 @@ deny_sqlinstance_backup_disabled<span class="o">[</span>msg<span class="o">]</sp
 <span class="c1">#  \__\___||___/\__|  \__,_|\___|_| |_|\__, |</span>
 <span class="c1">#                                      |___/ </span>
 
-<span class="c1"># Expect deny if there are multiple SQLInstance resources present, and at least</span>
-<span class="c1"># one of them has backupConfiguration disabled.</span>
+<span class="c1"># Expect deny if there are multiple StorageBucket resources present, and at least</span>
+<span class="c1"># one of them has publicAccessPrevention disabled.</span>
 test_deny_if_any_sqlinstance_has_backup_disabled<span class="w"> </span><span class="o">{</span>
 <span class="w">    </span>cfg<span class="w"> </span>:<span class="o">=</span><span class="w"> </span><span class="o">[</span>
 <span class="w">        </span><span class="o">{</span><span class="s2">&quot;contents&quot;</span>:<span class="w"> </span><span class="o">{</span>
-<span class="w">            </span><span class="s2">&quot;kind&quot;</span>:<span class="w"> </span><span class="s2">&quot;SQLInstance&quot;</span>,
-<span class="w">            </span><span class="s2">&quot;spec&quot;</span>:<span class="w"> </span><span class="o">{</span><span class="s2">&quot;settings&quot;</span>:<span class="w"> </span><span class="o">{</span><span class="s2">&quot;backupConfiguration&quot;</span>:<span class="w"> </span><span class="o">{</span><span class="s2">&quot;enabled&quot;</span>:<span class="w"> </span>true<span class="o">}}}</span>,
+<span class="w">            </span><span class="s2">&quot;kind&quot;</span>:<span class="w"> </span><span class="s2">&quot;StorageBucket&quot;</span>,
+<span class="w">            </span><span class="s2">&quot;spec&quot;</span>:<span class="w"> </span><span class="o">{</span><span class="s2">&quot;publicAccessPrevention&quot;</span>:<span class="w"> </span>true<span class="o">}</span>,
 <span class="w">        </span><span class="o">}}</span>,
 <span class="w">        </span><span class="o">{</span><span class="s2">&quot;contents&quot;</span>:<span class="w"> </span><span class="o">{</span>
-<span class="w">            </span><span class="s2">&quot;kind&quot;</span>:<span class="w"> </span><span class="s2">&quot;SQLInstance&quot;</span>,
-<span class="w">            </span><span class="s2">&quot;spec&quot;</span>:<span class="w"> </span><span class="o">{</span><span class="s2">&quot;settings&quot;</span>:<span class="w"> </span><span class="o">{</span><span class="s2">&quot;backupConfiguration&quot;</span>:<span class="w"> </span><span class="o">{</span><span class="s2">&quot;enabled&quot;</span>:<span class="w"> </span>false<span class="o">}}}</span>,
+<span class="w">            </span><span class="s2">&quot;kind&quot;</span>:<span class="w"> </span><span class="s2">&quot;StorageBucket&quot;</span>,
+<span class="w">            </span><span class="s2">&quot;spec&quot;</span>:<span class="w"> </span><span class="o">{</span><span class="s2">&quot;publicAccessPrevention&quot;</span>:<span class="w"> </span>false<span class="o">}</span>,
 <span class="w">        </span><span class="o">}}</span>,
 <span class="w">    </span><span class="o">]</span>
-<span class="w">    </span>count<span class="o">(</span>deny_sqlinstance_backup_disabled<span class="o">)</span><span class="w"> </span>&gt;<span class="w"> </span><span class="m">0</span><span class="w"> </span>with<span class="w"> </span>input<span class="w"> </span>as<span class="w"> </span>cfg
+<span class="w">    </span>count<span class="o">(</span>deny_storagebucket_without_public_access_prevention<span class="o">)</span><span class="w"> </span>&gt;<span class="w"> </span><span class="m">0</span><span class="w"> </span>with<span class="w"> </span>input<span class="w"> </span>as<span class="w"> </span>cfg
 <span class="o">}</span>
 
-<span class="c1"># Expect deny if there are multiple SQLInstance resources present, and at least</span>
-<span class="c1"># one of them does not specify the full path to backupConfiguration.</span>
-
-test_deny_if_any_sqlinstance_has_path_to_backup_unspecified<span class="w"> </span><span class="o">{</span>
+<span class="c1"># Expect deny if there are multiple StorageBucket resources present, and at least</span>
+<span class="c1"># one of them does not specify publicAccessPrevention.</span>
+test_deny_if_any_sqlinstance_has_backup_disabled<span class="w"> </span><span class="o">{</span>
 <span class="w">    </span>cfg<span class="w"> </span>:<span class="o">=</span><span class="w"> </span><span class="o">[</span>
 <span class="w">        </span><span class="o">{</span><span class="s2">&quot;contents&quot;</span>:<span class="w"> </span><span class="o">{</span>
-<span class="w">            </span><span class="s2">&quot;kind&quot;</span>:<span class="w"> </span><span class="s2">&quot;SQLInstance&quot;</span>,
-<span class="w">            </span><span class="s2">&quot;spec&quot;</span>:<span class="w"> </span><span class="o">{</span><span class="s2">&quot;settings&quot;</span>:<span class="w"> </span><span class="o">{}}</span>,
+<span class="w">            </span><span class="s2">&quot;kind&quot;</span>:<span class="w"> </span><span class="s2">&quot;StorageBucket&quot;</span>,
+<span class="w">            </span><span class="s2">&quot;spec&quot;</span>:<span class="w"> </span><span class="o">{</span><span class="s2">&quot;publicAccessPrevention&quot;</span>:<span class="w"> </span>true<span class="o">}</span>,
 <span class="w">        </span><span class="o">}}</span>,
 <span class="w">        </span><span class="o">{</span><span class="s2">&quot;contents&quot;</span>:<span class="w"> </span><span class="o">{</span>
-<span class="w">            </span><span class="s2">&quot;kind&quot;</span>:<span class="w"> </span><span class="s2">&quot;SQLInstance&quot;</span>,
-<span class="w">            </span><span class="s2">&quot;spec&quot;</span>:<span class="w"> </span><span class="o">{</span><span class="s2">&quot;settings&quot;</span>:<span class="w"> </span><span class="o">{</span><span class="s2">&quot;backupConfiguration&quot;</span>:<span class="w"> </span><span class="o">{</span><span class="s2">&quot;enabled&quot;</span>:<span class="w"> </span>true<span class="o">}}}</span>,
+<span class="w">            </span><span class="s2">&quot;kind&quot;</span>:<span class="w"> </span><span class="s2">&quot;StorageBucket&quot;</span>,
+<span class="w">            </span><span class="s2">&quot;spec&quot;</span>:<span class="w"> </span><span class="o">{}</span>,
 <span class="w">        </span><span class="o">}}</span>,
 <span class="w">    </span><span class="o">]</span>
-<span class="w">    </span>count<span class="o">(</span>deny_sqlinstance_backup_disabled<span class="o">)</span><span class="w"> </span>&gt;<span class="w"> </span><span class="m">0</span><span class="w"> </span>with<span class="w"> </span>input<span class="w"> </span>as<span class="w"> </span>cfg
+<span class="w">    </span>count<span class="o">(</span>deny_storagebucket_without_public_access_prevention<span class="o">)</span><span class="w"> </span>&gt;<span class="w"> </span><span class="m">0</span><span class="w"> </span>with<span class="w"> </span>input<span class="w"> </span>as<span class="w"> </span>cfg
 <span class="o">}</span>
+
 
 <span class="c1">#  _            _           _ _               </span>
 <span class="c1"># | |_ ___  ___| |_    __ _| | | _____      __</span>
@@ -590,34 +590,34 @@ test_deny_if_any_sqlinstance_has_path_to_backup_unspecified<span class="w"> </sp
 <span class="c1"># | ||  __/\__ \ |_  | (_| | | | (_) \ V  V / </span>
 <span class="c1">#  \__\___||___/\__|  \__,_|_|_|\___/ \_/\_/  </span>
 
-<span class="c1"># Expect allow if a non-SQLInstance resource is passed.</span>
+<span class="c1"># Expect allow if a non-StorageBucket resource is passed.</span>
 
 test_allow_if_resource_kind_is_not_sqlinstance<span class="w"> </span><span class="o">{</span>
 <span class="w">    </span>cfg<span class="w"> </span>:<span class="o">=</span><span class="w"> </span><span class="o">[</span>
 <span class="w">        </span><span class="o">{</span><span class="s2">&quot;contents&quot;</span>:<span class="w"> </span><span class="o">{</span>
-<span class="w">            </span><span class="s2">&quot;kind&quot;</span>:<span class="w"> </span><span class="s2">&quot;StorageBucket&quot;</span>,
+<span class="w">            </span><span class="s2">&quot;kind&quot;</span>:<span class="w"> </span><span class="s2">&quot;SQLInstance&quot;</span>,
 <span class="w">        </span><span class="o">}}</span>,
 <span class="w">        </span><span class="o">{</span><span class="s2">&quot;contents&quot;</span>:<span class="w"> </span><span class="o">{</span>
 <span class="w">            </span><span class="s2">&quot;kind&quot;</span>:<span class="w"> </span><span class="s2">&quot;Notebook&quot;</span>,
 <span class="w">        </span><span class="o">}}</span>,
 <span class="w">    </span><span class="o">]</span>
-<span class="w">    </span>count<span class="o">(</span>deny_sqlinstance_backup_disabled<span class="o">)</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="m">0</span><span class="w"> </span>with<span class="w"> </span>input<span class="w"> </span>as<span class="w"> </span>cfg
+<span class="w">    </span>count<span class="o">(</span>deny_storagebucket_without_public_access_prevention<span class="o">)</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="m">0</span><span class="w"> </span>with<span class="w"> </span>input<span class="w"> </span>as<span class="w"> </span>cfg
 <span class="o">}</span>
 
-<span class="c1"># Expect allow if **every** SQLInstance resource has backupConfiguration enabled.</span>
+<span class="c1"># Expect allow if **every** StorageBucket resource has publicAccessPrevention enabled.</span>
 
 test_allow_if_every_sqlinstance_has_backup_enabled<span class="w"> </span><span class="o">{</span>
 <span class="w">    </span>cfg<span class="w"> </span>:<span class="o">=</span><span class="w"> </span><span class="o">[</span>
 <span class="w">        </span><span class="o">{</span><span class="s2">&quot;contents&quot;</span>:<span class="w"> </span><span class="o">{</span>
-<span class="w">            </span><span class="s2">&quot;kind&quot;</span>:<span class="w"> </span><span class="s2">&quot;SQLInstance&quot;</span>,
-<span class="w">            </span><span class="s2">&quot;spec&quot;</span>:<span class="w"> </span><span class="o">{</span><span class="s2">&quot;settings&quot;</span>:<span class="w"> </span><span class="o">{</span><span class="s2">&quot;backupConfiguration&quot;</span>:<span class="w"> </span><span class="o">{</span><span class="s2">&quot;enabled&quot;</span>:<span class="w"> </span>true<span class="o">}}}</span>,
+<span class="w">            </span><span class="s2">&quot;kind&quot;</span>:<span class="w"> </span><span class="s2">&quot;StorageBucket&quot;</span>,
+<span class="w">            </span><span class="s2">&quot;spec&quot;</span>:<span class="w"> </span><span class="o">{</span><span class="s2">&quot;publicAccessPrevention&quot;</span>:<span class="w"> </span>true<span class="o">}</span>,
 <span class="w">        </span><span class="o">}}</span>,
 <span class="w">        </span><span class="o">{</span><span class="s2">&quot;contents&quot;</span>:<span class="w"> </span><span class="o">{</span>
-<span class="w">            </span><span class="s2">&quot;kind&quot;</span>:<span class="w"> </span><span class="s2">&quot;SQLInstance&quot;</span>,
-<span class="w">            </span><span class="s2">&quot;spec&quot;</span>:<span class="w"> </span><span class="o">{</span><span class="s2">&quot;settings&quot;</span>:<span class="w"> </span><span class="o">{</span><span class="s2">&quot;backupConfiguration&quot;</span>:<span class="w"> </span><span class="o">{</span><span class="s2">&quot;enabled&quot;</span>:<span class="w"> </span>true<span class="o">}}}</span>,
+<span class="w">            </span><span class="s2">&quot;kind&quot;</span>:<span class="w"> </span><span class="s2">&quot;StorageBucket&quot;</span>,
+<span class="w">            </span><span class="s2">&quot;spec&quot;</span>:<span class="w"> </span><span class="o">{</span><span class="s2">&quot;publicAccessPrevention&quot;</span>:<span class="w"> </span>true<span class="o">}</span>,
 <span class="w">        </span><span class="o">}}</span>,
 <span class="w">    </span><span class="o">]</span>
-<span class="w">    </span>count<span class="o">(</span>deny_sqlinstance_backup_disabled<span class="o">)</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="m">0</span><span class="w"> </span>with<span class="w"> </span>input<span class="w"> </span>as<span class="w"> </span>cfg
+<span class="w">    </span>count<span class="o">(</span>deny_storagebucket_without_public_access_prevention<span class="o">)</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="m">0</span><span class="w"> </span>with<span class="w"> </span>input<span class="w"> </span>as<span class="w"> </span>cfg
 <span class="o">}</span>
 </code></pre></div></td></tr></table></div>
 
@@ -634,21 +634,21 @@ test_allow_if_every_sqlinstance_has_backup_enabled<span class="w"> </span><span 
     
     <nav class="md-footer__inner md-grid" aria-label="Footer" >
       
+      
         
-        <a href="../../ac_3_1/bucket/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Bucket" rel="prev">
-          <div class="md-footer__button md-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
-          </div>
+        <a href="../../cp_9/sqlinstance/" class="md-footer__link md-footer__link--next" aria-label="Next: SQLInstance" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
-                Previous
+                Next
               </span>
-              Bucket
+              SQLInstance
             </div>
           </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+          </div>
         </a>
-      
       
     </nav>
   
