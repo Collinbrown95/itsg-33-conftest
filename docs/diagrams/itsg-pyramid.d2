@@ -1,0 +1,44 @@
+title: |md
+# ITSG-33 Controls
+|
+
+
+ITSG-33 Controls: {
+    Organizational Infrastructure: |md
+    # Organizational Infrastructure
+    Security controls that are in place for the entire organization.
+    ## Examples
+    - Every employee must use MFA with the cloud tenant.
+    - There is a process for creation/destruction of accounts.
+    - From which corporate network(s) can employees access the cloud tenant?
+    |
+
+    "": {
+        Project-Specific Infrastructure: |md
+        # Project-Specific Infrastructure
+        Security controls for infrastructure provisioned specifically for a project.
+        ## Examples
+        - Does the storage solution implement backups?
+        - Does the storage solution implement access control?
+        - Are project data encrypted at rest?
+        |
+        style: {
+            stroke: red
+            stroke-dash: 3
+        }
+        
+    }
+    itsg-33-conftest: |md
+    ### [itsg-33-conftest](https://github.com/Collinbrown95/itsg-33-conftest) addresses this box.
+    |
+
+    itsg-33-conftest -> "".Project-Specific Infrastructure
+    Project-Specific Code Artifacts: |md
+    # Project-Specific Code Artifacts
+    Security controls that address the security of project-specific code.
+    ## Examples
+    - Do project dependencies undergo routine CVE scanning?
+    - Does source code undergo routine SAST scanning?
+    - Are unit tests for the source code run regularly?
+    |
+}

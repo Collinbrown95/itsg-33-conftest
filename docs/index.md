@@ -1,3 +1,5 @@
 # Overview
 
-This is a temporary ITSG-33 docs site to mock out the user experience of [itsg-33-conftest](https://github.com/Collinbrown95/itsg-33-conftest) until [it33-filtering](https://github.com/PHACDataHub/it33-filtering/) is deployed.
+This project applies a very thin wrapper around [Conftest](https://www.conftest.dev/) to enable Policy-as-Code checks against [ITSG-33](https://www.cyber.gc.ca/en/guidance/it-security-risk-management-lifecycle-approach-itsg-33) security requirements.
+
+![ITSG components](./diagrams/itsg-pyramid.svg)

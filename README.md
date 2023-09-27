@@ -9,7 +9,7 @@ The purpose of this repository is to use conftest to implement policy as code fo
 - The `--policy ./policy` part is implicit, but you can point to policies defined in other folders.
 
 ```bash
-conftest test input.yaml --policy ./policy
+conftest test input.yaml --policy ./policy [--output table] [--all-namespaces]
 ```
 
 **Output**
