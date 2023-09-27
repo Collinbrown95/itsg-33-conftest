@@ -3,11 +3,11 @@
 ## Rego Policy
 
 ```bash
---8<-- "policy/config_connector/cp-9/sqlinstance.rego"
+--8<-- "policy/config_connector/cp_9/sqlinstance.rego"
 ```
 
 ## Test Cases
 
 ```bash
---8<-- "policy/config_connector/cp-9/sqlinstance_test.rego"
+--8<-- "policy/config_connector/cp_9/sqlinstance_test.rego"
 ```

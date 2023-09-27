@@ -25,5 +25,7 @@ markdown_extensions:
 
 nav:
   - Config Connector:
+    - AC 3 (1):
+      - Bucket: config_connector/ac_3_1/bucket.md
     - CP 9:
       - SQLInstance: config_connector/cp_9/sqlinstance.md
