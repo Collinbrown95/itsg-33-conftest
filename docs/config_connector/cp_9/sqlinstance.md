@@ -1,5 +1,9 @@
 # CP_9 SQLInstance
 
+## Description
+
+To comply with [CP-9 Informaton System Backup], all `SQLInstance` resources must have `spec.settings.backupConfiguration.enabled` set to `true`.
+
 ## Rego Policy
 
 ```bash
